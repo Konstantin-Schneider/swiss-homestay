@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swiss Homestay GmbH | Ihr Partner für Corporate Housing am Bodensee</title>
+<meta name="description" content="Swiss Homestay GmbH – verlässlicher Partner für Immobilieneigentümer im Bodenseeraum. Sichere Mieteinnahmen, professionelle Betreuung, null Aufwand.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          swissred: {
+            DEFAULT: '#D52B1E',
+            dark: '#B02217',
+          },
+          slate: {
+            950: '#0B1220',
+          }
+        },
+        fontFamily: {
+          sans: ['"Inter"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  .carousel-slide { transition: opacity 0.8s ease-in-out; }
+</style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+<!-- ============ NAVBAR ============ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-slate-100">
+  <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <span class="w-2.5 h-2.5 rounded-full bg-swissred"></span>
+      <span class="font-bold text-lg tracking-tight text-slate-900">Swiss Homestay <span class="font-normal text-slate-500">GmbH</span></span>
+    </div>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+      <a href="#vorteile" class="hover:text-swissred transition">Vorteile</a>
+      <a href="#ueber-mich" class="hover:text-swissred transition">Über mich</a>
+      <a href="#kontakt" class="hover:text-swissred transition">Kontakt</a>
+    </div>
+    <a href="#kontakt" class="bg-slate-900 hover:bg-swissred text-white text-sm font-semibold px-5 py-2.5 rounded-full transition">Partner werden</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="relative pt-40 pb-24 px-6 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
+  <div class="absolute -top-24 -right-24 w-96 h-96 bg-swissred/5 rounded-full blur-3xl"></div>
+  <div class="absolute top-40 -left-24 w-72 h-72 bg-slate-900/5 rounded-full blur-3xl"></div>
+  <div class="max-w-4xl mx-auto text-center relative">
+    <span class="inline-block text-xs font-semibold tracking-widest uppercase text-swissred bg-swissred/10 px-4 py-1.5 rounded-full mb-6">Für Immobilieneigentümer &amp; Vermieter im Bodenseeraum</span>
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+      Sichere Mieteinnahmen, <span class="text-swissred">null Aufwand</span> —<br class="hidden md:block"> Ihr verlässlicher Partner im Bodenseeraum
+    </h1>
+    <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl mx-auto">
+      Wir mieten Ihre Wohnung gewerblich für hochwertiges Corporate Housing — mit garantierter Mietzahlung, professioneller Pflege und ohne Ihren Aufwand.
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="#kontakt" class="w-full sm:w-auto bg-swissred hover:bg-swissred-dark text-white font-semibold px-8 py-3.5 rounded-full transition shadow-lg shadow-swissred/20">Unverbindlich anfragen</a>
+      <a href="#vorteile" class="w-full sm:w-auto text-slate-700 font-semibold px-8 py-3.5 rounded-full border border-slate-200 hover:border-slate-400 transition">Vorteile ansehen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAROUSEL ============ -->
+<section class="px-6 -mt-6 mb-24">
+  <div class="max-w-6xl mx-auto">
+    <div id="carousel" class="relative w-full h-[280px] md:h-[520px] rounded-3xl overflow-hidden shadow-2xl shadow-slate-900/10">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" alt="Hochwertig eingerichtetes Wohnzimmer" class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-100">
+      <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1600&q=80" alt="Moderne eingerichtete Küche" class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-0">
+      <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1600&q=80" alt="Elegantes Schlafzimmer" class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-0">
+      <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80" alt="Stilvolles Badezimmer" class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-0">
+      <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1600&q=80" alt="Gemütlicher Arbeitsbereich" class="carousel-slide absolute inset-0 w-full h-full object-cover opacity-0">
+
+      <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+
+      <!-- Prev/Next -->
+      <button onclick="changeSlide(-1)" aria-label="Vorheriges Bild" class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-slate-900 w-10 h-10 rounded-full flex items-center justify-center shadow-md transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+      </button>
+      <button onclick="changeSlide(1)" aria-label="Nächstes Bild" class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-slate-900 w-10 h-10 rounded-full flex items-center justify-center shadow-md transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+      </button>
+
+      <!-- Dots -->
+      <div id="dots" class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VORTEILE ============ -->
+<section id="vorteile" class="px-6 py-24 bg-slate-950">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-xs font-semibold tracking-widest uppercase text-swissred">Ihre Vorteile</span>
+      <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-white tracking-tight">Warum Vermieter auf uns setzen</h2>
+      <p class="mt-4 text-slate-400">Wir übernehmen das operative Risiko — Sie profitieren von einer planbaren, gewerblichen Mietbeziehung.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 hover:border-swissred/50 transition">
+        <div class="w-12 h-12 rounded-xl bg-swissred/10 flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-swissred" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 8h6m-5 4h4m-7 8h10a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2zm2-13h6" /></svg>
+        </div>
+        <h3 class="font-semibold text-white text-lg">Garantierte Mietzahlung</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Pünktliche, gewerbliche Mietüberweisung jeden Monat — unabhängig von Belegung oder Saison.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 hover:border-swissred/50 transition">
+        <div class="w-12 h-12 rounded-xl bg-swissred/10 flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-swissred" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+        </div>
+        <h3 class="font-semibold text-white text-lg">Professionelle Pflege</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Reinigung und Instandhaltung nach jedem Gast — Ihre Wohnung bleibt in erstklassigem Zustand.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 hover:border-swissred/50 transition">
+        <div class="w-12 h-12 rounded-xl bg-swissred/10 flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-swissred" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-2.13a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4" /></svg>
+        </div>
+        <h3 class="font-semibold text-white text-lg">Keine Mietersuche</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Ein einziger, langfristiger gewerblicher Mieter statt wiederkehrender Vermarktung und Leerstand.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 hover:border-swissred/50 transition">
+        <div class="w-12 h-12 rounded-xl bg-swissred/10 flex items-center justify-center mb-5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-swissred" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 4v5c0 5-3.5 8.5-7 9.5C8.5 20.5 5 17 5 12V7l7-4z" /></svg>
+        </div>
+        <h3 class="font-semibold text-white text-lg">Vollkasko-Absicherung</h3>
+        <p class="mt-2 text-sm text-slate-400 leading-relaxed">Umfassender Haftpflicht- und Schadenschutz für Ihr Eigentum während der gesamten Mietdauer.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÜBER MICH ============ -->
+<section id="ueber-mich" class="px-6 py-24 bg-white">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+    <div class="relative order-2 md:order-1">
+      <div class="absolute -top-6 -left-6 w-32 h-32 bg-swissred/10 rounded-3xl -z-10"></div>
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" alt="Bodensee Region" class="rounded-3xl w-full h-[420px] object-cover shadow-xl">
+      <div class="absolute -bottom-6 -right-6 bg-white border border-slate-100 rounded-2xl shadow-lg p-5 max-w-[220px]">
+        <p class="text-swissred font-bold text-2xl">ETH Zürich</p>
+        <p class="text-sm text-slate-500">Maschinenbau · Bodensee-Region</p>
+      </div>
+    </div>
+    <div class="order-1 md:order-2">
+      <span class="text-xs font-semibold tracking-widest uppercase text-swissred">Über mich</span>
+      <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">Schweizer Präzision, lokale Verbundenheit</h2>
+      <p class="mt-6 text-slate-600 leading-relaxed">
+        Ich bin Maschinenbau-Student an der ETH Zürich und direkt am Bodensee aufgewachsen. Diese Region ist meine Heimat — und genau hier habe ich früh erkannt, welches Potenzial professionell betreutes Corporate Housing für Immobilieneigentümer bietet.
+      </p>
+      <p class="mt-4 text-slate-600 leading-relaxed">
+        Mit Swiss Homestay GmbH verbinde ich analytische Sorgfalt und akademische Zuverlässigkeit mit persönlicher, lokaler Betreuung. Für Sie bedeutet das: ein Partner, der Ihre Immobilie so behandelt, als wäre es seine eigene.
+      </p>
+      <div class="mt-8 flex gap-8">
+        <div>
+          <p class="text-2xl font-extrabold text-slate-900">100%</p>
+          <p class="text-sm text-slate-500">Gewerbliche Nutzung</p>
+        </div>
+        <div>
+          <p class="text-2xl font-extrabold text-slate-900">1:1</p>
+          <p class="text-sm text-slate-500">Persönlicher Ansprechpartner</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT ============ -->
+<section id="kontakt" class="px-6 py-24 bg-slate-50">
+  <div class="max-w-3xl mx-auto text-center mb-12">
+    <span class="text-xs font-semibold tracking-widest uppercase text-swissred">Kontakt</span>
+    <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">Lassen Sie uns sprechen</h2>
+    <p class="mt-4 text-slate-600">Sie besitzen eine Wohnung im Bodenseeraum und möchten mehr erfahren? Schreiben Sie uns unverbindlich.</p>
+  </div>
+
+  <div class="max-w-xl mx-auto bg-white rounded-3xl shadow-xl shadow-slate-900/5 border border-slate-100 p-8 md:p-10">
+    <form id="contact-form" action="https://formspree.io/f/xbdvwqye" method="POST" class="space-y-5">
+      <div>
+        <label for="name" class="block text-sm font-medium text-slate-700 mb-1.5">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name"
+          class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-swissred/40 focus:border-swissred transition">
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="email" class="block text-sm font-medium text-slate-700 mb-1.5">E-Mail</label>
+          <input type="email" id="email" name="email" required placeholder="name@beispiel.ch"
+            class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-swissred/40 focus:border-swissred transition">
+        </div>
+        <div>
+          <label for="phone" class="block text-sm font-medium text-slate-700 mb-1.5">Telefonnummer</label>
+          <input type="tel" id="phone" name="phone" placeholder="+41 79 000 00 00"
+            class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-swissred/40 focus:border-swissred transition">
+        </div>
+      </div>
+      <div>
+        <label for="message" class="block text-sm font-medium text-slate-700 mb-1.5">Nachricht</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Erzählen Sie uns kurz von Ihrer Immobilie..."
+          class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-swissred/40 focus:border-swissred transition resize-none"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-swissred hover:bg-swissred-dark text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-lg shadow-swissred/20">
+        Anfrage senden
+      </button>
+      <p class="text-xs text-slate-400 text-center pt-1">Mit dem Absenden stimmen Sie unserer Datenschutzerklärung zu.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="px-6 py-10 bg-slate-950 border-t border-slate-800">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-400">
+    <div class="flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-swissred"></span>
+      <span class="font-semibold text-white">Swiss Homestay GmbH</span>
+      <span class="hidden md:inline">— Bodenseeraum</span>
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+      <a href="mailto:welcome@swiss-homestay.ch" class="hover:text-white transition">welcome@swiss-homestay.ch</a>
+      <a href="#impressum" class="hover:text-white transition">Impressum</a>
+      <a href="#datenschutz" class="hover:text-white transition">Datenschutz (DSGVO)</a>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto mt-6 pt-6 border-t border-slate-800/60 text-xs text-slate-500 text-center md:text-left">
+    © 2026 Swiss Homestay GmbH. Alle Rechte vorbehalten. Diese Website richtet sich ausschliesslich an gewerbliche Partner (Immobilieneigentümer/Vermieter).
+  </div>
+</footer>
+
+<script>
+  // ---- Carousel ----
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dotsContainer = document.getElementById('dots');
+  let current = 0;
+  let autoplayTimer;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'w-2.5 h-2.5 rounded-full transition ' + (i === 0 ? 'bg-white' : 'bg-white/40');
+    dot.setAttribute('aria-label', 'Bild ' + (i + 1));
+    dot.addEventListener('click', () => goToSlide(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function updateDots() {
+    [...dotsContainer.children].forEach((dot, i) => {
+      dot.className = 'w-2.5 h-2.5 rounded-full transition ' + (i === current ? 'bg-white' : 'bg-white/40');
+    });
+  }
+
+  function goToSlide(index) {
+    slides[current].classList.remove('opacity-100');
+    slides[current].classList.add('opacity-0');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.remove('opacity-0');
+    slides[current].classList.add('opacity-100');
+    updateDots();
+    resetAutoplay();
+  }
+
+  function changeSlide(direction) {
+    goToSlide(current + direction);
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoplayTimer);
+    autoplayTimer = setInterval(() => goToSlide(current + 1), 6000);
+  }
+  resetAutoplay();
+
+  // ---- Contact form (client-side hook, ready for Formspree/Web3Forms) ----
+  const form = document.getElementById('contact-form');
+  form.addEventListener('submit', function (e) {
+    const btn = form.querySelector('button[type="submit"]');
+    btn.textContent = 'Wird gesendet...';
+    btn.disabled = true;
+  });
+</script>
+
+</body>
+</html>
